@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@simbaleon/api-interfaces": ["libs/api-interfaces/src/index.ts"]
+      "@simbaleon/api-interfaces": ["libs/api-interfaces/src/index.ts"],
+      "@simbaleon/common/ui/spinner": ["libs/common/ui/spinner/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

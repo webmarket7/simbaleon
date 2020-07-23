@@ -1,10 +1,22 @@
 {
-  "extends": "../../tslint.json",
-  "rules": {
-    "directive-selector": [true, "attribute", "simbaleon", "camelCase"],
-    "component-selector": [true, "element", "simbaleon", "kebab-case"]
-  },
-  "linterOptions": {
-    "exclude": ["!**/*"]
-  }
+    "extends": "../../tslint.json",
+    "rules": {
+        "directive-selector": [
+            true,
+            "attribute",
+            "sl",
+            "camelCase"
+        ],
+        "component-selector": [
+            true,
+            "element",
+            "sl",
+            "kebab-case"
+        ]
+    },
+    "linterOptions": {
+        "exclude": [
+            "!**/*"
+        ]
+    }
 }
