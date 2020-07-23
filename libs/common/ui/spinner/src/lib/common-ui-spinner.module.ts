@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SpinnerComponent } from './spinner.component';
+import { SlSpinnerComponent } from './spinner.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-    imports: [CommonModule],
-    declarations: [SpinnerComponent],
-    exports: [SpinnerComponent]
+    imports: [
+        CommonModule,
+        BrowserAnimationsModule
+    ],
+    declarations: [SlSpinnerComponent],
+    exports: [SlSpinnerComponent]
 })
 export class CommonUiSpinnerModule {
 }
