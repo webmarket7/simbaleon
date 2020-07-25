@@ -234,6 +234,41 @@
           "style": "scss"
         }
       }
+    },
+    "common-util-optimizations": {
+      "projectType": "library",
+      "root": "libs/common/util/optimizations",
+      "sourceRoot": "libs/common/util/optimizations/src",
+      "prefix": "sl",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/util/optimizations/tsconfig.lib.json",
+              "libs/common/util/optimizations/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/common/util/optimizations/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/util/optimizations/jest.config.js",
+            "tsConfig": "libs/common/util/optimizations/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/common/util/optimizations/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

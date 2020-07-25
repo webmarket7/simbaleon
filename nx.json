@@ -40,6 +40,9 @@
     },
     "common-ui-spinner": {
       "tags": ["scope:shared", "type:ui", "platform:desktop"]
+    },
+    "common-util-optimizations": {
+      "tags": ["scope:shared", "type:util", "platform:desktop"]
     }
   }
 }

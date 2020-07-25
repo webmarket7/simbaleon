@@ -17,7 +17,10 @@
     "baseUrl": ".",
     "paths": {
       "@simbaleon/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@simbaleon/common/ui/spinner": ["libs/common/ui/spinner/src/index.ts"]
+      "@simbaleon/common/ui/spinner": ["libs/common/ui/spinner/src/index.ts"],
+      "@simbaleon/common/util/optimizations": [
+        "libs/common/util/optimizations/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]
