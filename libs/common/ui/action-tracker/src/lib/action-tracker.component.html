@@ -1,0 +1,18 @@
+<sl-progress-spinner
+    [mode]='_spinnerMode'
+    [stroke]='_spinnerStroke'
+    [value]='_spinnerValue'
+    [diameter]='circleDiameter'
+    [strokeWidth]='circleStrokeWidth'
+    [playOnInit]='false'
+    (animationDone)='_onSpinnerAnimationDone($event)'
+></sl-progress-spinner>
+<div class='sl-action-tracker__outcome'>
+    <sl-checkmark
+        [containerSize]='_checkmarkContainerSize'
+        [strokeWidth]='checkmarkStrokeWidth'
+        [stroke]='strokeSuccess'
+        [playOnInit]='false'
+        (animationDone)='_onCheckmarkAnimationDone()'
+    ></sl-checkmark>
+</div>

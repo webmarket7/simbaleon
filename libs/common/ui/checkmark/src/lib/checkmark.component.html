@@ -1,0 +1,16 @@
+<svg attr.viewBox='0 0 {{ containerSize || 0 }} {{ containerSize || 0 }}'
+     focusable='false'
+     [attr.width]='containerSize'
+     [attr.height]='containerSize'
+>
+    <polyline
+              #checkmark
+              fill='none'
+              stroke-linecap='round'
+              [attr.points]='_points'
+              [attr.stroke]='stroke'
+              [attr.stroke-width]='strokeWidth'
+              [attr.stroke-dasharray]='_dashArray'
+              [attr.stroke-dashoffset]='_dashOffset'
+    />
+</svg>

@@ -203,38 +203,6 @@
         }
       }
     },
-    "common-ui-spinner": {
-      "projectType": "library",
-      "root": "libs/common/ui/spinner",
-      "sourceRoot": "libs/common/ui/spinner/src",
-      "prefix": "sl",
-      "architect": {
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "libs/common/ui/spinner/tsconfig.lib.json",
-              "libs/common/ui/spinner/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**", "!libs/common/ui/spinner/**/*"]
-          }
-        },
-        "test": {
-          "builder": "@nrwl/jest:jest",
-          "options": {
-            "jestConfig": "libs/common/ui/spinner/jest.config.js",
-            "tsConfig": "libs/common/ui/spinner/tsconfig.spec.json",
-            "passWithNoTests": true,
-            "setupFile": "libs/common/ui/spinner/src/test-setup.ts"
-          }
-        }
-      },
-      "schematics": {
-        "@nrwl/angular:component": {
-          "style": "scss"
-        }
-      }
-    },
     "common-util-optimizations": {
       "projectType": "library",
       "root": "libs/common/util/optimizations",
@@ -261,6 +229,108 @@
             "tsConfig": "libs/common/util/optimizations/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/common/util/optimizations/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "common-ui-progress-spinner": {
+      "projectType": "library",
+      "root": "libs/common/ui/progress-spinner",
+      "sourceRoot": "libs/common/ui/progress-spinner/src",
+      "prefix": "sl",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/ui/progress-spinner/tsconfig.lib.json",
+              "libs/common/ui/progress-spinner/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/common/ui/progress-spinner/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/ui/progress-spinner/jest.config.js",
+            "tsConfig": "libs/common/ui/progress-spinner/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/common/ui/progress-spinner/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "common-ui-checkmark": {
+      "projectType": "library",
+      "root": "libs/common/ui/checkmark",
+      "sourceRoot": "libs/common/ui/checkmark/src",
+      "prefix": "sl",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/ui/checkmark/tsconfig.lib.json",
+              "libs/common/ui/checkmark/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/ui/checkmark/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/ui/checkmark/jest.config.js",
+            "tsConfig": "libs/common/ui/checkmark/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/common/ui/checkmark/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "common-ui-action-tracker": {
+      "projectType": "library",
+      "root": "libs/common/ui/action-tracker",
+      "sourceRoot": "libs/common/ui/action-tracker/src",
+      "prefix": "sl",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/ui/action-tracker/tsconfig.lib.json",
+              "libs/common/ui/action-tracker/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/common/ui/action-tracker/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/ui/action-tracker/jest.config.js",
+            "tsConfig": "libs/common/ui/action-tracker/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/common/ui/action-tracker/src/test-setup.ts"
           }
         }
       },

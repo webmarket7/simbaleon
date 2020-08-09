@@ -10,6 +10,7 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
+    "allowJs": true,
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2017", "dom"],
     "skipLibCheck": true,
@@ -17,9 +18,17 @@
     "baseUrl": ".",
     "paths": {
       "@simbaleon/api-interfaces": ["libs/api-interfaces/src/index.ts"],
-      "@simbaleon/common/ui/spinner": ["libs/common/ui/spinner/src/index.ts"],
       "@simbaleon/common/util/optimizations": [
         "libs/common/util/optimizations/src/index.ts"
+      ],
+      "@simbaleon/common/ui/progress-spinner": [
+        "libs/common/ui/progress-spinner/src/index.ts"
+      ],
+      "@simbaleon/common/ui/checkmark": [
+        "libs/common/ui/checkmark/src/index.ts"
+      ],
+      "@simbaleon/common/ui/action-tracker": [
+        "libs/common/ui/action-tracker/src/index.ts"
       ]
     }
   },
