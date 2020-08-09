@@ -1,0 +1,14 @@
+.sl-progress-spinner {
+    display: inline-block;
+
+    svg {
+        vertical-align: top;
+        transform: rotate(-90deg);
+        transform-origin: center;
+    }
+
+    circle {
+        fill: transparent;
+        transform-origin: center;
+    }
+}

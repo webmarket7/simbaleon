@@ -1,0 +1,15 @@
+<svg attr.viewBox='0 0 {{ diameter || 0 }} {{ diameter || 0 }}'
+     focusable='false'
+     [attr.width]='diameter'
+     [attr.height]='diameter'
+>
+    <circle #circle
+            cx='50%'
+            cy='50%'
+            [attr.r]='_radius'
+            [attr.stroke]='stroke'
+            [attr.stroke-width]='strokeWidth'
+            [attr.stroke-dasharray]='_strokeCircumference'
+            [attr.stroke-dashoffset]='_dashOffset'
+    ></circle>
+</svg>
