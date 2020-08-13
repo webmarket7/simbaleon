@@ -1,77 +1,102 @@
 {
-    "npmScope": "simbaleon",
-    "affected": {
-        "defaultBase": "master"
+  "npmScope": "simbaleon",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
     },
-    "implicitDependencies": {
-        "angular.json": "*",
-        "package.json": {
-            "dependencies": "*",
-            "devDependencies": "*"
-        },
-        "tsconfig.base.json": "*",
-        "tslint.json": "*",
-        "nx.json": "*"
-    },
-    "tasksRunnerOptions": {
-        "default": {
-            "runner": "@nrwl/nx-cloud",
-            "options": {
-                "accessToken": "MWExYmRlZmQtM2I1Ny00NjA2LWE0MzAtNzE0ZTM0MTcwMmMxfHJlYWQtd3JpdGU=",
-                "cacheableOperations": [
-                    "build",
-                    "test",
-                    "lint",
-                    "e2e"
-                ],
-                "canTrackAnalytics": false,
-                "showUsageWarnings": true
-            }
-        }
-    },
-    "projects": {
-        "kanban": {
-            "tags": []
-        },
-        "kanban-e2e": {
-            "tags": [],
-            "implicitDependencies": [
-                "kanban"
-            ]
-        },
-        "api": {
-            "tags": []
-        },
-        "api-interfaces": {
-            "tags": []
-        },
-        "common-util-optimizations": {
-            "tags": [
-                "scope:shared",
-                "type:util",
-                "platform:desktop"
-            ]
-        },
-        "common-ui-progress-spinner": {
-            "tags": [
-                "scope:shared",
-                "type:ui",
-                "platform:desktop"
-            ]
-        },
-        "common-ui-checkmark": {
-            "tags": [
-                "scope:shared",
-                "type:ui",
-                "platform:desktop"
-            ]
-        },
-        "common-ui-action-tracker": {
-            "tags": [
-                "scope:shared",
-                "type:ui",
-                "platform:desktop"
-            ]
-        }
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "MWExYmRlZmQtM2I1Ny00NjA2LWE0MzAtNzE0ZTM0MTcwMmMxfHJlYWQtd3JpdGU=",
+        "cacheableOperations": [
+          "build",
+          "test",
+          "lint",
+          "e2e"
+        ],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
     }
+  },
+  "projects": {
+    "kanban": {
+      "tags": []
+    },
+    "kanban-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "kanban"
+      ]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": []
+    },
+    "common-util-optimizations": {
+      "tags": [
+        "scope:shared",
+        "type:util",
+        "platform:desktop"
+      ]
+    },
+    "common-ui-progress-spinner": {
+      "tags": [
+        "scope:shared",
+        "type:ui",
+        "platform:desktop"
+      ]
+    },
+    "common-ui-checkmark": {
+      "tags": [
+        "scope:shared",
+        "type:ui",
+        "platform:desktop"
+      ]
+    },
+    "common-ui-action-tracker": {
+      "tags": [
+        "scope:shared",
+        "type:ui",
+        "platform:desktop"
+      ]
+    },
+    "common-ui-button": {
+      "tags": [
+        "scope:shared",
+        "type:ui",
+        "platform:desktop"
+      ]
+    },
+    "common-ui-button-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "common-ui-button"
+      ]
+    },
+    "common-ui-progress-spinner-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "common-ui-progress-spinner"
+      ]
+    },
+    "common-ui-action-tracker-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "common-ui-action-tracker"
+      ]
+    }
+  }
 }
