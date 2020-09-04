@@ -30,7 +30,8 @@
       "@simbaleon/common/ui/action-tracker": [
         "libs/common/ui/action-tracker/src/index.ts"
       ],
-      "@simbaleon/common/ui/button": ["libs/common/ui/button/src/index.ts"]
+      "@simbaleon/common/ui/button": ["libs/common/ui/button/src/index.ts"],
+      "@simbaleon/common/ui/dialog": ["libs/common/ui/dialog/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
