@@ -1,0 +1,8 @@
+$sl-dialog-container-background: var(--sl-dialog-container-background);
+$sl-dialog-container-elevation: var(--sl-dialog-container-elevation);
+
+.sl-dialog__container {
+    outline: none;
+    background-color: $sl-dialog-container-background;
+    box-shadow: $sl-dialog-container-elevation;
+}
